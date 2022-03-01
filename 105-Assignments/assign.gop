@@ -1,0 +1,51 @@
+// The assignment operator is an operator that can be assigned directly.
+// We list all assignment operators in Go+
+//  [all assignment operators in Go+](https://blog.csdn.net/weixin_43896643/article/details/121737367)
+
+
+var a int = 21
+var c int
+
+c = a
+println("c 值为 = ", c) // c 值为 =  21
+
+c += a
+println("c 值为 = ", c) // c 值为 =  42 
+
+c -= a
+println("c 值为 = ", c) // c 值为 =  21 
+
+c *= a
+println("c 值为 = ", c) // c 值为 =  441
+
+c /= a
+println("c 值为 = ", c) // c 值为 =  21 
+
+c = 200
+
+c <<= 2
+println("c 值为 = ", c) // c 值为 =  800
+
+c >>= 2
+println("c 值为 = ", c) // c 值为 =  200
+
+c &= 2
+println("c 值为 = ", c) // c 值为 =  0
+
+c ^= 2
+println("c 值为 = ", c) // c 值为 =  2
+
+c |= 2
+println("c 值为 = ", c) // c 值为 =  2
+
+
+//declare and assign operator
+//Go+ has a convenient way of writing assignments. Its syntax is as follows:
+
+变量名 := 变量值
+
+//It should be noted that it cannot be used outside the function, that is, it cannot be used to declare global variables.
+
+a := 100;
+a +=: 10;
+println(a) //110
